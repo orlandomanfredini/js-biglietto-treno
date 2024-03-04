@@ -25,6 +25,7 @@ let tariffaUmana = tariffa.toFixed(2) //number
     // - SE passeggero ha < 18 anni applico 20% di sconto
     // - ALTRIMENTI SE ha età > 65 anni applico 40% di sconto
     // - ALTRIMENTI stampa tariffa normale
+
 if(age < 18){
     console.log(tariffaUmana - tariffaUmana * 0.20 )
 } else if(age > 65){
