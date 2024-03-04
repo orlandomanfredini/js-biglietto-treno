@@ -18,19 +18,21 @@ let age = parseFloat (prompt('Inserisci la tua età') /* number*/)
 //   - Applico tariffa di 0,21€ / km da percorrere
 
 let tariffa = trip * 0.21; //number
+let tariffaUmana = tariffa.toFixed(2) //number
 
 // - In base all'età  
 //   - Calcolo possibili sconti: 
     // - SE passeggero ha < 18 anni applico 20% di sconto
     // - ALTRIMENTI SE ha età > 65 anni applico 40% di sconto
+    // - ALTRIMENTI stampa tariffa normale
 if(age < 18){
-    console.log(tariffa - tariffa * 0.20 )
+    console.log(tariffaUmana - tariffaUmana * 0.20 )
 } else if(age > 65){
-    console.log(tariffa - tariffa * 0.40)
+    console.log(tariffaUmana - tariffaUmana * 0.40)
     
 } else{
-    console.log(tariffa)
+    console.log(tariffaUmana)
 }
 
 
- // - Stampo prezzo in console    
+ // - Stampo prezzo finale in console   
