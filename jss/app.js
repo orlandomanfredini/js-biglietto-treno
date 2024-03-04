@@ -9,16 +9,16 @@
 
 // - Chiedere (con promt) all'utente km da percorrere e età.
 
-let trip = parseFloat (prompt('Inserisci km da percorrere') /*number*/)
+let trip = parseInt (prompt('Inserisci km da percorrere') /*number*/)
 
-let age = parseFloat (prompt('Inserisci la tua età') /* number*/)
-
+let age = parseInt (prompt('Inserisci la tua età') /* number*/)
 
 // - In base ai km da percorrere
 //   - Applico tariffa di 0,21€ / km da percorrere
 
 let tariffa = trip * 0.21; //number
-let tariffaUmana = Math.round(tariffa * 100) / 100 //number
+let tariffaUmana = parseFloat(tariffa.toFixed(2)) //number
+
 
 // - In base all'età  
 //   - Calcolo possibili sconti: 
