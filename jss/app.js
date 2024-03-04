@@ -18,7 +18,7 @@ let age = parseFloat (prompt('Inserisci la tua età') /* number*/)
 //   - Applico tariffa di 0,21€ / km da percorrere
 
 let tariffa = trip * 0.21; //number
-let tariffaUmana = tariffa.toFixed(2) //number
+let tariffaUmana = Math.round(tariffa * 100) / 100 //number
 
 // - In base all'età  
 //   - Calcolo possibili sconti: 
