@@ -9,9 +9,9 @@
 
 // - Chiedere (con promt) all'utente km da percorrere e età.
 
-let trip = parseInt (prompt('Inserisci km da percorrere') /*number*/)
+let trip = parseInt(prompt('Inserisci km da percorrere') /*number*/)
 
-let age = parseInt (prompt('Inserisci la tua età') /* number*/)
+let age = parseInt(prompt('Inserisci la tua età') /* number*/)
 
 // - In base ai km da percorrere
 //   - Applico tariffa di 0,21€ / km da percorrere
